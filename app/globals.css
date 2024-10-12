@@ -1,76 +1,223 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
+@layer base {
+  :root {
+    --background: #040710;
+    --foreground: 222.2 84% 4.9%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-      --primary: 222.2 47.4% 11.2%;
-      --primary-foreground: 210 40% 98%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-      --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-      --accent: 210 40% 96.1%;
-      --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
-      --ring: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
-
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
-
-      --popover: 222.2 84% 4.9%;
-      --popover-foreground: 210 40% 98%;
-
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
-
-      --secondary: 217.2 32.6% 17.5%;
-      --secondary-foreground: 210 40% 98%;
-
-      --muted: 217.2 32.6% 17.5%;
-      --muted-foreground: 215 20.2% 65.1%;
-
-      --accent: 217.2 32.6% 17.5%;
-      --accent-foreground: 210 40% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 40% 98%;
-
-      --border: 217.2 32.6% 17.5%;
-      --input: 217.2 32.6% 17.5%;
-      --ring: 212.7 26.8% 83.9%;
-    }
+    --radius: 0.5rem;
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+  .dark {
+    --background: #040710;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+body {
+  background-color: #040710;
+  color: white;
+}
+
+.hero-bg {
+  background-image: url("/hero-section-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #040710;
+}
+
+.hero-text {
+  background: linear-gradient(
+    91deg,
+    #fe0573 1.74%,
+    #fff 43.71%,
+    #fff 61.62%,
+    #5c48c7 102.48%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: Raleway; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.ads-audit {
+  background: linear-gradient(90deg, #504cff 0%, #e025ce 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orient {
+  width: 502.86px;
+  height: 546.997px;
+  flex-shrink: 0;
+  border-radius: 546.997px;
+  background: rgba(176, 194, 255, 0.5);
+  filter: blur(350px);
+}
+.background-blur {
+  width: 346px;
+  height: 128px;
+  flex-shrink: 0;
+  background: var(--Background-background2, #1f413d);
+  filter: blur(125px);
+}
+
+.service-hading {
+  font-weight: 400;
+  line-height: 75px !important; /* 110.294% */
+  background: linear-gradient(
+    91deg,
+    #fe0474 1.74%,
+    #fff 43.71%,
+    #fff 61.62%,
+    #be9fff 102.48%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.background-blur-service {
+  border-radius: 587.332px;
+  background: rgba(224, 37, 206, 0.5);
+  filter: blur(350px);
+  width: 570.654px;
+  height: 587.332px;
+  flex-shrink: 0;
+}
+.background-blur-service-2 {
+  background: rgba(87, 87, 87, 0.6);
+  filter: blur(150px);
+  width: 641px;
+  height: 287px;
+  flex-shrink: 0;
+}
+
+.custom-border {
+  border-radius: 10px;
+  border: 2px solid #e025ce;
+  background: linear-gradient(
+    139deg,
+    rgba(255, 255, 255, 0.18) -6.39%,
+    rgba(143, 143, 143, 0.08) 112.17%
+  );
+  backdrop-filter: blur(50px);
+  box-shadow: 0px 4px 6.2px rgba(255, 255, 255, 0.25);
+}
+
+.why-choose-us-pink {
+  border-radius: 587.332px;
+  background: rgba(224, 37, 206, 0.5);
+  filter: blur(350px);
+  width: 570.654px;
+  height: 587.332px;
+  flex-shrink: 0;
+}
+
+.why-choose-us-pale {
+  width: 502.86px;
+  height: 546.997px;
+  flex-shrink: 0;
+  border-radius: 546.997px;
+  background: rgba(176, 194, 255, 0.5);
+  filter: blur(350px);
+}
+
+.footer-gradient {
+  background: linear-gradient(
+    93deg,
+    rgba(16, 24, 40, 0.3) 15.94%,
+    rgba(224, 37, 206, 0.3) 100%
+  );
+  
+}
+
+@media (max-width: 500px) {
+  .hero-bg {
+    background-image: url("/herosection-bg-phone.png");
+  }
+  .service-hading {
+    line-height: 28px;
+  }
+}
