@@ -167,8 +167,8 @@ export default function BlogPost({ params }: BlogPostParams) {
                   Pitfalls of Searching for Your Own Google Ads
                 </h2>
                 <p className="mb-6">
-                  Searching for your own ads can be tempting, but it's not an
-                  accurate representation of how your ads appear to others.
+                  Searching for your own ads can be tempting, but it&apos;s not
+                  an accurate representation of how your ads appear to others.
                   Heres why:
                 </p>
                 <ul className="list-disc pl-6 mb-6 space-y-2">
@@ -212,13 +212,10 @@ export default function BlogPost({ params }: BlogPostParams) {
                   className="w-full px-4 py-2 rounded-md bg-[#2a0d34] text-white mb-4 h-10"
                 ></textarea>
                 <div className="flex items-center mb-4">
-                  <input
-                    type="checkbox"
-                    id="saveInfo"
-                    className="mr-2"
-                  />
+                  <input type="checkbox" id="saveInfo" className="mr-2" />
                   <label htmlFor="saveInfo" className="text-sm text-gray-300">
-                    Save my name, email, and website in this browser for the next time I comment.
+                    Save my name, email, and website in this browser for the
+                    next time I comment.
                   </label>
                 </div>
                 <button
@@ -231,8 +228,6 @@ export default function BlogPost({ params }: BlogPostParams) {
             </div>
           </div>
         </div>
-
-      
       </div>
     </div>
   );
