@@ -109,10 +109,10 @@ const CaseStudy = () => {
           onPageChange={paginate}
         />
 
-        <div className="background-blur-service absolute top-[20%] -right-[20%] z-0"></div>
-        <div className="background-blur-service-2 absolute top-[20%] -left-[20%] z-0"></div>
+        <div className="background-blur-service absolute top-[20%] -right-[20%] -z-10"></div>
+        <div className="background-blur-service-2 absolute top-[20%] -left-[20%] -z-10"></div>
 
-        <div className="absolute top-[70%] left-0 z-0 overflow-hidden">
+        <div className="absolute top-[70%] left-0 -z-10 overflow-hidden">
           <Image
             src="/service-vector.png"
             alt="section-image.png"
@@ -121,7 +121,7 @@ const CaseStudy = () => {
             className="object-contain w-[60%]"
           />
         </div>
-        <div className="absolute top-[30%] right-0 z-0 overflow-hidden rotate-180">
+        <div className="absolute top-[30%] right-0 -z-10 overflow-hidden rotate-180">
           <Image
             src="/service-vector.png"
             alt="section-image.png"

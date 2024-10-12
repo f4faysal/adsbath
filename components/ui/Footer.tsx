@@ -1,7 +1,4 @@
-import React from "react";
-import { FiTwitter } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
-import { CiYoutube } from "react-icons/ci";
+import { FiTwitter, FiInstagram, FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -13,100 +10,138 @@ const Footer = () => {
             href="#"
             className="flex justify-center space-x-3 lg:justify-start"
           >
-            <span className="self-center lg:text-4xl text-3xl font-semibold">
+            <span className="self-center text-3xl lg:text-4xl font-semibold">
               AdsBath
             </span>
           </a>
-          <div>
-            <p className="my-2">Tempus congue tellus semper sapien </p>
-            <p className="my-2">urna. Tellus posuere ut.</p>
-            <div className="flex gap-3 my-2 text-2xl">
-              <p>
-                <FiTwitter className="text-purple-600" />
-              </p>
-              <p>
-                <FaInstagram className="text-purple-600" />
-              </p>
-              <p>
-                <CiYoutube className="text-purple-600" />
-              </p>
+          <div className="mt-4 text-center lg:text-left">
+            <p className="my-2">Empowering your digital presence</p>
+            <p className="my-2">with innovative solutions.</p>
+            <div className="flex justify-center lg:justify-start gap-4 my-4 text-2xl">
+              <FiTwitter className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors" />
+              <FiInstagram className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors" />
+              <FiYoutube className="text-purple-400 hover:text-purple-300 cursor-pointer transition-colors" />
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 ml-0 lg:ml-56 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:w-2/3">
           <div className="space-y-3">
-            <h3 className="uppercase dark:text-gray-900">services</h3>
+            <h3 className="uppercase text-purple-300 font-semibold">
+              Services
+            </h3>
             <ul className="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="#">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
                   Digital Strategy
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  Content Planing
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
+                  Content Planning
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
                   Graphic Design
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
                   Website Design
                 </a>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="uppercase dark:text-gray-900">company</h3>
+            <h3 className="uppercase text-purple-300 font-semibold">Company</h3>
             <ul className="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="#">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
                   Contact Info
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  Our service
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
+                  Our Services
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="#">
-                  Career
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="hover:text-purple-300 transition-colors"
+                >
+                  Careers
                 </a>
               </li>
             </ul>
           </div>
-          <div className="space-y-3">
-            <div className="text-white uppercase">subscribe</div>
-            <div className="flex justify-start space-x-3">
+          <div className="space-y-3 col-span-2 md:col-span-1">
+            <h3 className="uppercase text-purple-300 font-semibold">
+              Subscribe
+            </h3>
+            <form className="flex flex-col space-y-3">
               <input
-                type="text"
-                className="bg-white text-black border lg:w-full w-28 border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Enter text here"
+                type="email"
+                className="bg-white text-black border w-full border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                placeholder="Enter your email"
               />
-            </div>
-            <button className="uppercase bg-purple-900 text-white h-11 rounded-md w-full">
-              subscribe
-            </button>
+              <button className="uppercase bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-md transition-colors">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between py-10 mx-4 lg:mx-56 text-sx">
-        <div className="flex flex-col lg:flex-row gap-4 mb-4 lg:mb-0">
-          <span>Copyright © 2023 AdsBath</span>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-2">
-          <span className="border-r pr-2 border-[#3E1C96]">Term of use</span>
-          <span className="border-r pr-2 border-[#3E1C96]">Privacy Policy</span>
-          <span>Cookie Policy</span>
+      <div className="py-6 text-sm text-center lg:text-left">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+          <div className="mb-4 lg:mb-0">
+            <span>&copy; 2023 AdsBath. All rights reserved.</span>
+          </div>
+          <div className="flex flex-wrap justify-center lg:justify-end gap-4">
+            <a href="#" className="hover:text-purple-300 transition-colors">
+              Terms of Use
+            </a>
+            <a href="#" className="hover:text-purple-300 transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-purple-300 transition-colors">
+              Cookie Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
