@@ -1,4 +1,4 @@
-import { Progress } from "@/components/ui/progress";
+ 
 import { PlaneTakeoff } from "lucide-react";
 
 export default function ComingSoon() {
@@ -11,7 +11,7 @@ export default function ComingSoon() {
           This page has not been created yet. <br />
           Stay tuned though!
         </p>
-        <Progress value={75} className="w-2/6 " />
+        {/* <Progress value={75} className="w-2/6 " /> */}
       </div>
     </div>
   );
