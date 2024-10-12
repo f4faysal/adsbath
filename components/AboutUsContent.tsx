@@ -14,7 +14,7 @@ const AboutUsContent: React.FC = () => {
               Looking for better brand awareness?
             </h2>
             <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6">
-              You've come to the right place! At Tenlee Media, we are here to
+              Youve come to the right place! At Tenlee Media, we are here to
               exceed your expectations.
             </p>
             <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6">
