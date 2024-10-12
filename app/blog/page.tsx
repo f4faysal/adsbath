@@ -93,7 +93,7 @@ export default function BlogPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
           {blogPosts.map((post, index) => (
             <Link
-              href={`/blog/${index}`}
+              href={`/blog/${post.slug}`}
               key={index}
               className="bg-[#16072c] text-white rounded-xl shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-transform duration-300 overflow-hidden h-full p-6 "
             >
