@@ -53,7 +53,7 @@ const PartnerLogosSection = () => {
     <div className="relative w-full partner-bg-gradient overflow-hidden flex flex-col items-center justify-center py-10">
       <motion.div
         ref={ref}
-        className="flex flex-col md:flex-row justify-center space-x-8 items-center"
+        className="flex justify-center space-x-8 items-center"
         variants={containerVariants}
         initial="hidden"
         animate={controls}

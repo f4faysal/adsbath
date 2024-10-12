@@ -1,6 +1,6 @@
 import PartnerLogosSection from "@/components/PartnerLogosSection";
 import HeroSection from "@/components/ui/hero-section";
-import TheService from "@/components/ui/the-service";
+import TheService from "@/components/the-service";
 import Head from "next/head";
 
 export const metadata = {
