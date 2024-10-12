@@ -3,10 +3,10 @@ import { PiArrowCircleUpRight } from "react-icons/pi";
 
 const HeroSection = () => {
   return (
-    <section className="hero-bg lg:h-[870px] lg:-mt-[92px] ">
+    <section className="hero-bg  lg:h-[870px] lg:-mt-[92px] ">
       <div className="container mx-auto h-full w-full flex items-center">
         <div className="flex flex-col md:flex-row flex-1 justify-between items-center py-10 lg:py-0">
-          <div className="flex flex-col justify-center ">
+          <div className="flex flex-col justify-center mt-14 lg:mt-0">
             <div className="relative">
               <h1 className="text-3xl lg:text-6xl  ">
                 <span className="hero-text ">Amazing Website</span> <br />

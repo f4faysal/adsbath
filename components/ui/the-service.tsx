@@ -13,6 +13,9 @@ const CardCarousel = dynamic(() => import("../card-carousel"), { ssr: false });
 const TheService = () => {
   return (
     <section className="relative bg-[#0f1320] overflow-hidden">
+
+    
+
       {/* The Service We ProvideFor You */}
       <div id="service">
         {/* Title  */}
@@ -42,8 +45,7 @@ const TheService = () => {
         {/*  */}
       </div>
 
-      {/* Behind the Scenes: Our Process
-for Digital Dominance */}
+      {/* Behind the Scenes: Our Process for Digital Dominance */}
       <div className="relative pb-7">
         <div className="container mx-auto items-center justify-center flex flex-col">
           <h1 className="service-hading text-center lg:text-[60px] md:text-4xl text-2xl my-4">
